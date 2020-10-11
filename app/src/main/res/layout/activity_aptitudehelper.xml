@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundblack"
+    tools:context=".aptitudehelper">
+
+    <TextView
+        android:id="@+id/textViewapti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aptitude Helper"
+        android:textAllCaps="false"
+        android:textColor="@color/lightwhite"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <ScrollView
+        android:id="@+id/scrollViewapti"
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewapti"
+        app:layout_constraintVertical_bias="0.888">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/apticlock"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backcyan"
+                android:onClick="reachtoclockangle"
+                android:text="Clock angle"
+                android:textAllCaps="false"
+                android:textColor="@color/backgroundblack"
+                android:textSize="25sp"
+                android:textStyle="normal">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/apticalender"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backcyan"
+                android:onClick="reachtocalender"
+                android:text="Calender"
+                android:textAllCaps="false"
+                android:textColor="@color/backgroundblack"
+                android:textSize="25sp"
+                android:textStyle="normal">
+
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

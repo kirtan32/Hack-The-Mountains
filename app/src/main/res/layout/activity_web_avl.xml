@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundblack"
+    tools:context=".web_avl">
+
+
+    <Button
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttontool3"
+        android:text="Back"
+        android:textColor="#121212"
+        android:onClick="getbacktodraw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buttontool3"
+        android:text="Home"
+        android:onClick="gethomebinary"
+        android:textColor="#121212"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <EditText
+        android:id="@+id/editTextavl"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ffffff"
+        android:hint="Save file As"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textColorHint="#555555"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <Button
+        android:layout_width="107dp"
+        android:layout_height="38dp"
+        android:background="#85fd2b"
+        android:onClick="savecontent"
+        android:text="Save"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textinsertavl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Insert"
+                android:textColor="#ffccff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/insertavl"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:backgroundTint="#ffffff"
+                android:hint="number"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textColorHint="#555555"
+                android:textSize="18sp"
+                android:textStyle="normal">
+
+            </EditText>
+
+            <Button
+                android:layout_width="104dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/buttontool2"
+                android:onClick="insertitem"
+                android:text="Insert"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textdeleteavl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:text="Delete"
+                android:textColor="#ffccff"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/deleteavl"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="#ffffff"
+                android:hint="number"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textColorHint="#555555"
+                android:textSize="18sp"
+                android:textStyle="normal">
+
+            </EditText>
+
+            <Button
+                android:layout_width="108dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/buttontool2"
+                android:onClick="deleteitem"
+                android:text="DELETE"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewavl"
+        android:layout_width="318dp"
+        android:layout_height="345dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892">
+
+        <ScrollView
+            android:id="@+id/scrollavl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

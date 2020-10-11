@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundblack"
+    tools:context=".inpostpreconvertor">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:background="@drawable/backcyan"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:onClick="gethome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Spinner
+        android:id="@+id/fixesnames"
+        android:layout_width="189dp"
+        android:layout_height="47dp"
+        android:background="@color/white"
+        android:entries="@array/fixnames"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/stringfixconvertor"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/magenta"
+        android:hint="Enter String"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/magenta"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fixesnames"
+        app:layout_constraintVertical_bias="0.017">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/convertfix"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/backcyan"
+        android:text="Convert"
+        android:textAllCaps="false"
+        android:textColor="@color/backgroundblack"
+        android:textSize="20dp"
+        android:onClick="setoutpur"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stringfixconvertor"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/fixoutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="@color/cyan"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/convertfix"
+        app:layout_constraintStart_toStartOf="@+id/convertfix"
+        app:layout_constraintTop_toBottomOf="@+id/convertfix"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fixoutput" >
+
+        <TextView
+            android:id="@+id/fixdisc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=""
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:textAllCaps="false">
+
+        </TextView>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

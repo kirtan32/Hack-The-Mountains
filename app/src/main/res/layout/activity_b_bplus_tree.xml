@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundblack"
+    tools:context=".b_bplus_tree">
+
+    <Button
+        android:id="@+id/btreesbackhome"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttontool"
+        android:text="Back"
+        android:onClick="getBackbtreespage1"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textheadbtrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B / B+ Tree Visualizer"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/subheadbtrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="self-balancing binary search trees"
+        android:textColor="#ff99ff"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+
+    <LinearLayout
+        android:id="@+id/btreelayout"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:background="@drawable/btreesbacktool"
+        android:onClick="btreeopen"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="28dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="B Tree"
+            android:gravity="center_horizontal">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bplustreelayout"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:background="@drawable/btreesbacktool"
+        android:onClick="bplustreeopen"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="28dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="B +  Tree"
+            android:gravity="center_horizontal">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

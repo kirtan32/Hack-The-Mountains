@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FeatureList</string>
+    <string-array name="fixnames">
+
+        <item>Infix to Postfix</item>
+        <item>Infix to Prefix</item>
+        <item>Postfix to Infix</item>
+        <item>Postfix to Prefix</item>
+        <item>Prefix to Postfix</item>
+        <item>Prefix to Infix</item>
+
+    </string-array>
+    <string-array name="knapsacktypes">
+        <item>Bounded without Repetition</item>
+        <item>Bounded with Repetition</item>
+        <item>Unbounded without Repetition</item>
+        <item>Unbounded with Repetition</item>
+    </string-array>
+</resources>

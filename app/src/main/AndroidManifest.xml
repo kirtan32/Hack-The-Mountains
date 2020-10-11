@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.featurelist">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".knapsack"></activity>
+        <activity android:name=".algosolver" />
+        <activity android:name=".inpostpreconvertor" />
+        <activity android:name=".apticalender" />
+        <activity android:name=".apticlock" />
+        <activity android:name=".aptitudehelper" />
+        <activity android:name=".web_btree" />
+        <activity android:name=".btreeact" />
+        <activity android:name=".btreechooser" />
+        <activity android:name=".web_avl" />
+        <activity android:name=".web_binary" />
+        <activity android:name=".avltreepage1" />
+        <activity android:name=".b_bplus_tree" />
+        <activity android:name=".binarytree" />
+        <activity android:name=".binaryconversion" />
+        <activity android:name=".treevisualizer" />
+        <activity android:name=".mainpage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

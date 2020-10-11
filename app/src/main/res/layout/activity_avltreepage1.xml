@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundblack"
+    tools:context=".avltreepage1">
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttontool"
+        android:text="Back"
+        android:onClick="getBackavlpage1"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textheadavl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AVL Tree Visualizer"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/subheadavl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AVL - Adelson ,Velski &amp; Landis"
+        android:textColor="#ff99ff"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+
+    <TextView
+        android:id="@+id/textViewavl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Context [In coma saperated]"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234"
+        android:gravity="center_horizontal">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/contextavl"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textColorHint="#888888"
+        android:backgroundTint="#ffffff"
+        android:hint="e.g. 5,10,15 etc"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="duplicate value is not considered"
+        android:textColor="#888888"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/buttonavl"
+        android:layout_width="264dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttontool"
+        android:onClick="solveavl"
+        android:text="Solve "
+        android:textColor="#32343e"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

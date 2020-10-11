@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundblack"
+    tools:context=".algosolver">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:background="@drawable/backyellow"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:onClick="getbackmain"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Algorithm Quick Solver"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="491dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:onClick="solveknapsack"
+                android:text="0/1 KnapSack Problem"
+                android:background="@drawable/backyellow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+            </Button>
+
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:text="Longgest common subsequence"
+                android:background="@drawable/backyellow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+            </Button>
+
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:text="Chain Matrix Multiplication"
+                android:background="@drawable/backyellow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+            </Button>
+
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:text="N Queen Problem"
+                android:background="@drawable/backyellow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+            </Button>
+
+
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:text="Assembly Line Scheduling"
+                android:background="@drawable/backyellow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+            </Button>
+
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:text="Coin Exchange Problem"
+                android:background="@drawable/backyellow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+            </Button>
+
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:text="Rod Cutting Problem"
+                android:background="@drawable/backyellow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+            </Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

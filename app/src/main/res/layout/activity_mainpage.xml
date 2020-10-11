@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundblack"
+    tools:context=".mainpage">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FeatureList"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/treevisualizer"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backgreen"
+                android:onClick="treevisualizer"
+                android:text="Tree Visualizer"
+                android:textAllCaps="false"
+                android:textColor="@color/backgroundblack"
+                android:textSize="25sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/binaryconversion"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backcyan"
+                android:onClick="binaryconversion"
+                android:text="Conversion of \nDecimal, Binary, Octal and Hexa"
+                android:textAllCaps="false"
+                android:textColor="@color/backgroundblack"
+                android:textSize="20sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/aptitudehelper"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backmagenta"
+                android:onClick="aptitudehelper"
+                android:text="Aptitude Helper"
+                android:textAllCaps="false"
+                android:textSize="25sp"
+                android:textStyle="normal"></Button>
+
+            <Button
+                android:id="@+id/algosolver"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backyellow"
+                android:onClick="algosolver"
+                android:text="Algorithm Quick Solver"
+                android:textAllCaps="false"
+                android:textSize="25sp"
+                android:textStyle="normal"></Button>
+
+            <Button
+                android:id="@+id/treetraversal"
+                android:layout_width="340dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backwhite"
+                android:onClick="infixprefixpostfix"
+                android:text="Infix-Postfix-Prefix\n Converter"
+                android:textAllCaps="false"
+                android:textSize="25sp"></Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

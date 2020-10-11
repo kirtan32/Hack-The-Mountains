@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundblack"
+    tools:context=".binaryconversion">
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/backcyan"
+        android:text="Home"
+        android:onClick="getbacktomain"
+        android:textColor="@color/backgroundblack"
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Number: "
+        android:textAllCaps="false"
+        android:textColor="@color/lightwhite"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:textColorHint="@color/lightwhite"
+        android:backgroundTint="@color/lightwhite"
+        android:textColor="@color/lightwhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0">
+
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinConversionSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cyan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintVertical_bias="0.065">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="133dp"
+        android:layout_height="51dp"
+        android:background="@drawable/backcyan"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textColor="@color/backgroundblack"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinConversionSelection"
+        app:layout_constraintVertical_bias="0.044">
+
+    </Button>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate">
+
+        <TableRow>
+
+            <TextView
+                android:padding="10dp"
+                android:text="Decimal"
+                android:textColor="@color/lightwhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textDecimal"
+                android:width="0dip"
+                android:textColor="@color/lightwhite"
+                android:gravity="right"
+                android:padding="10dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="10dp"
+                android:text="Binary"
+                android:textColor="@color/lightwhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textBinary"
+                android:width="0dip"
+                android:textColor="@color/lightwhite"
+                android:gravity="right"
+                android:padding="10dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="10dp"
+                android:text="Octal"
+                android:textColor="@color/lightwhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textOctal"
+                android:width="0dip"
+                android:textColor="@color/lightwhite"
+                android:gravity="right"
+                android:padding="10dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="10dp"
+                android:text="HexaDecimal"
+                android:textColor="@color/lightwhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textHexa"
+                android:width="0dip"
+                android:textColor="@color/lightwhite"
+                android:gravity="right"
+                android:padding="10dp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

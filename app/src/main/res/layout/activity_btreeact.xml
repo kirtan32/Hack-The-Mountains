@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundblack"
+    tools:context=".btreeact">
+
+    <Button
+        android:id="@+id/btreebackhome"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttontool"
+        android:text="Back"
+        android:onClick="getBackbtreepage"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textheadbtree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B  Tree Visualizer"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/textViewbtree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Enter Context  [ In coma saperated ]"
+        android:textAlignment="center"
+        android:textColor="#fff4ff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/contextbtree"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textColorHint="#888888"
+        android:backgroundTint="#ffffff"
+        android:hint="e.g. 5,10,15 etc"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonbtree"
+        android:layout_width="240dp"
+        android:layout_height="66dp"
+        android:background="@drawable/btreesbacktool"
+        android:onClick="solvebtree"
+        android:text="Solve "
+        android:textColor="#32fffe"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
